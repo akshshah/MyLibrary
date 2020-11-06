@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAddNewBook"
+        android:text="Enter Book Details"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:id="@+id/nestedScrollView"
+        android:layout_below="@+id/txtAddNewBook"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:id="@+id/editName"
+                android:layout_marginTop="10dp"
+                app:met_underlineColor="@color/orange"
+                app:met_primaryColor="@color/orange"
+                app:met_textColorHint="#9E9E9E"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabel="highlight"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Author"
+                android:id="@+id/editAuthor"
+                android:layout_below="@+id/editName"
+                android:layout_marginTop="8dp"
+                app:met_underlineColor="@color/orange"
+                app:met_primaryColor="@color/orange"
+                app:met_textColorHint="#9E9E9E"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabel="highlight"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Language"
+                android:id="@+id/editLanguage"
+                android:layout_below="@+id/editAuthor"
+                android:layout_marginTop="8dp"
+                app:met_underlineColor="@color/orange"
+                app:met_primaryColor="@color/orange"
+                app:met_textColorHint="#9E9E9E"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabel="highlight"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pages"
+                android:inputType="number"
+                android:id="@+id/editPages"
+                android:layout_below="@+id/editLanguage"
+                android:layout_marginTop="8dp"
+                app:met_underlineColor="@color/orange"
+                app:met_primaryColor="@color/orange"
+                app:met_textColorHint="#9E9E9E"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabel="highlight"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:id="@+id/editDescription"
+                android:layout_below="@+id/editPages"
+                android:lines="3"
+                android:layout_marginTop="8dp"
+                app:met_underlineColor="@color/orange"
+                app:met_primaryColor="@color/orange"
+                app:met_textColorHint="#9E9E9E"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabel="highlight"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Image Url"
+                android:id="@+id/editImageURL"
+                android:layout_below="@+id/editDescription"
+                android:layout_marginTop="8dp"
+                app:met_underlineColor="@color/orange"
+                app:met_primaryColor="@color/orange"
+                app:met_textColorHint="#9E9E9E"
+                app:met_floatingLabelAnimating="true"
+                app:met_floatingLabel="highlight"/>
+            
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/editImageURL">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnCancel"
+                    android:backgroundTint="@color/orange"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="Cancel"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnAdd"
+                    android:backgroundTint="@color/orange"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="Add"
+                    android:layout_toRightOf="@+id/btnCancel"
+                    android:layout_toEndOf="@+id/btnCancel"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

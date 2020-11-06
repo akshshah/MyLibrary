@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Library"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="35sp"
+            android:id="@+id/txtLibrary"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLibrary"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="See All Books"
+                android:id="@+id/seeAll"
+                android:backgroundTint="#FF5722"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Currently Reading Books"
+                android:id="@+id/current"
+                android:layout_below="@id/seeAll"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#FF5722"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Want to Read Books"
+                android:id="@+id/wantTo"
+                android:layout_below="@+id/current"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#FF5722"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already Read Books"
+                android:id="@+id/alreadyRead"
+                android:layout_below="@+id/wantTo"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#FF5722"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Favourite Books"
+                android:id="@+id/favourites"
+                android:layout_below="@+id/alreadyRead"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#FF5722"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
